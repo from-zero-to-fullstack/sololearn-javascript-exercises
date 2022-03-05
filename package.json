@@ -1,0 +1,16 @@
+{
+  "name": "sololearn-javascript-exercises",
+  "version": "1.0.0",
+  "description": "A series of JavaScript exercises from Sololearn 😱",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["Javacript", "Exercises"],
+  "author": "Pedro Soares",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
