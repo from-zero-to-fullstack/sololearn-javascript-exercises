@@ -1,17 +1,22 @@
-var triesToClimb = 7;
-var slide = 2;
-
-var climbPerDay = triesToClimb - slide;
-
-var daysCount = 0;
-
 const climb = (stepsToClimb) => {
 
-    for (step = triesToClimb, days = 1; step < stepsToClimb; step += triesToClimb, days++) {
-        step -= slide;
+    var climbStepsPerDay = 7;
+    var slideStepsPerDay = 2;
+    var daysCount = 0;
+
+    for (step = 0; step <= stepsToClimb;) {
+
+        step += climbStepsPerDay
+        daysCount++;
+
+        if (step >= stepsToClimb) {
+            break;
+        }
+
+        step -= slideStepsPerDay;
     }
 
-    return days;
+    return daysCount;
 }
 
 exports.climb = climb;
