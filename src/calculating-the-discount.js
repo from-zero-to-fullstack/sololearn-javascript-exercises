@@ -1,13 +1,13 @@
 function main() {
-    var prodID = readLine();
-    var price = parseInt(readLine(),10);
-    var discount = parseInt(readLine(),10);
-    
+    var prodID = "LD1493";
+    var price = 1700;
+    var discount = 15;
+   
     var prod1= new Product(prodID, price);
     console.log(prod1.prodID + " price: " + prod1.price);
     
-    prod1.changePrice(discount);
-    console.log(prod1.prodID + " new price: " + prod1.price);
+    var newPrice = prod1.changePrice(discount);
+    console.log(prod1.prodID + " new price: " + newPrice);
 }
 
 function Product(prodID, price) {
@@ -15,7 +15,8 @@ function Product(prodID, price) {
     this.price = price;
 
     this.changePrice = function(discount) {
-        //console.log(this.price - (0.15*this.price));
+        return this.price - ((discount/100)*this.price);
         
     }
 }
+main();
