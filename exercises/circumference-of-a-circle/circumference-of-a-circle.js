@@ -8,7 +8,7 @@ function main() {
 
 //complete the function
 function calcCirc(r){
-    return(2 * Math.PI(r));
+    return(2 * Math.PI * r);
 }
 
 main();
