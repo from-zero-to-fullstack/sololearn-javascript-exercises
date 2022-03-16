@@ -13,5 +13,8 @@ function getWeekDay(year, month, day) {
        //complete the function
     console.log(names[index]);
 
+    //Opção 2:
+    // delete var index
+    //console.log(names[d.getDay()]);
 }
 main();
